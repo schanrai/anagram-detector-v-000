@@ -12,7 +12,7 @@ class Anagram
 #match diaper to [hello world zombies pants dipper]
 def match(word_array)
   some_word = @word.split("").sort
-  result = []
+  #result = []
   word_array.select do | element |
      element.split("").sort == some_word
   end
