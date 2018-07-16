@@ -13,7 +13,7 @@ class Anagram
 def match(word_array)
   some_word = @word.split("").sort
   result = []
-  word_array.collect do | element |
+  word_array.select do | element |
      element.split("").sort == some_word
   end
 end
